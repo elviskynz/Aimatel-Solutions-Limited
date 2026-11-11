@@ -268,6 +268,229 @@
 }
     .dark-section { background: var(--ink); color: var(--white); }
     .dark-section .section-head p { color: rgba(255,255,255,.65); }
+
+    .coverage-section { padding-top: 24px; }
+    .coverage-panel {
+      padding: 32px;
+      border-radius: 24px;
+      background: var(--white);
+      box-shadow: 0 24px 60px rgba(11,31,58,.06);
+    }
+    .coverage-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .coverage-search {
+      width: min(100%, 420px);
+      min-height: 52px;
+      padding: 0 18px;
+      border: 1px solid rgba(11,31,58,.14);
+      border-radius: 999px;
+      font: 500 16px "DM Sans", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+    }
+    .coverage-search:focus {
+      outline: 2px solid rgba(255,199,44,.7);
+      border-color: transparent;
+    }
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .coverage-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 72px;
+      padding: 18px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(11,31,58,.08);
+      background: linear-gradient(180deg, #fff, #f9fbff);
+      color: var(--ink);
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      transition: transform .2s, border-color .2s, box-shadow .2s;
+    }
+    .coverage-item:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255,199,44,.8);
+      box-shadow: 0 12px 20px rgba(11,31,58,.05);
+    }
+    .coverage-item.hidden { display: none; }
+    .coverage-empty {
+      display: none;
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 14px;
+      background: var(--cream);
+      color: var(--muted);
+      font-weight: 500;
+      text-align: center;
+    }
+    .coverage-empty.visible { display: block; }
+    .coverage-help {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .coverage-help a {
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    .process-section { padding-top: 24px; }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .process-card {
+      padding: 32px 24px;
+      border-radius: 20px;
+      background: var(--white);
+      border: 1px solid rgba(11,31,58,.08);
+      box-shadow: 0 18px 44px rgba(11,31,58,.04);
+    }
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 54px;
+      height: 54px;
+      margin-bottom: 26px;
+      border-radius: 50%;
+      background: var(--lime);
+      color: var(--ink);
+      font-size: 18px;
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+    }
+    .process-card h3 {
+      margin: 0 0 12px;
+      font-size: 26px;
+    }
+    .process-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .faq-item {
+      padding: 28px 26px;
+      border-radius: 18px;
+      background: var(--white);
+      border: 1px solid rgba(11,31,58,.08);
+    }
+    .faq-item h3 {
+      margin: 0 0 12px;
+      font-size: 25px;
+    }
+    .faq-item p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+    .testimonial-card {
+      padding: 32px 26px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+    }
+    .testimonial-card p {
+      margin: 0 0 18px;
+      color: rgba(255,255,255,.8);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    .testimonial-card strong {
+      display: block;
+      color: var(--white);
+      font-size: 18px;
+      font-family: "Manrope", sans-serif;
+    }
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 50;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 58px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: #25D366;
+      color: var(--white);
+      font-weight: 700;
+      box-shadow: 0 16px 32px rgba(37,211,102,.28);
+    }
+    .floating-whatsapp:hover { transform: translateY(-2px); }
+    .brand-banner {
+      background: linear-gradient(90deg, rgba(11,31,58,.96), rgba(15,58,95,.98));
+      color: var(--white);
+      border-top: 1px solid rgba(255,255,255,.12);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+    }
+    .brand-banner-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      min-height: 82px;
+    }
+    .brand-banner-left {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .brand-banner .logo-img {
+      background: rgba(255,255,255,.08);
+      padding: 6px;
+      border-radius: 12px;
+    }
+    .brand-banner strong {
+      display: block;
+      font-family: "Manrope", sans-serif;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+    .brand-banner span {
+      color: rgba(255,255,255,.7);
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .brand-banner-meta {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.78);
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .brand-banner-meta i {
+      color: var(--lime);
+      font-style: normal;
+      font-size: 18px;
+    }
     .work-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
     .work-card {
       min-height: 440px;
@@ -296,6 +519,27 @@
   transition: color .2s;
 }
 .contact-number:hover { color: var(--green); }
+    .offer-strip {
+      background: var(--lime);
+      border-top: 1px solid rgba(11,31,58,.1);
+      border-bottom: 1px solid rgba(11,31,58,.1);
+    }
+    .offer-strip-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      min-height: 58px;
+      color: var(--ink);
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .offer-strip-inner strong {
+      font-size: 16px;
+    }
     .cta {
       padding: 88px 0;
       background: var(--lime);
@@ -329,6 +573,14 @@
       .visual { height: 420px; }
       .services-grid { grid-template-columns: 1fr; }
       .packages-grid { grid-template-columns: 1fr; }
+      .process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .faq-grid { grid-template-columns: 1fr; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .coverage-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .coverage-header { flex-direction: column; align-items: flex-start; }
+      .brand-banner-inner { flex-direction: column; align-items: flex-start; justify-content: center; padding: 18px 0; }
+      .brand-banner-meta { gap: 8px 16px; }
+      .offer-strip-inner { font-size: 12px; gap: 10px; }
       .service-card { min-height: 280px; }
       .service-icon { margin-bottom: 48px; }
       .work-grid { grid-template-columns: 1fr; }
@@ -347,6 +599,13 @@
       .section-head { align-items: start; flex-direction: column; }
       .visual { height: 360px; }
       .visual::before { width: 280px; height: 280px; }
+      .process-grid { grid-template-columns: 1fr; }
+      .coverage-panel { padding: 20px; }
+      .coverage-grid { grid-template-columns: 1fr; }
+      .coverage-search { width: 100%; }
+      .brand-banner strong { font-size: 18px; }
+      .brand-banner span { font-size: 11px; }
+      .brand-banner-meta { font-size: 12px; }
       .work-card { min-height: 380px; padding: 28px; }
       .cta { text-align: left; }
       .cta .button { width: 100%; }
@@ -369,6 +628,32 @@
     </nav>
   </header>
 
+  <div class="brand-banner">
+    <div class="container brand-banner-inner">
+      <div class="brand-banner-left">
+        <img class="logo-img" src="logo.png" alt="Aimatel Solutions logo">
+        <div>
+          <strong>Aimatel Solutions</strong>
+          <span>Fast Internet • Local Support</span>
+        </div>
+      </div>
+      <div class="brand-banner-meta">
+        <span><i>•</i> Wajir coverage</span>
+        <span><i>•</i> Quick installation</span>
+        <span><i>•</i> Friendly support</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="offer-strip">
+    <div class="container offer-strip-inner">
+      <strong>Offer:</strong>
+      <span>Installation Ksh 3,000</span>
+      <span>|</span>
+      <span>First month free</span>
+    </div>
+  </div>
+
   <main>
     <div class="container hero">
      <div>
@@ -378,6 +663,9 @@
   <div class="hero-actions">
     <a class="button button-dark" href="https://wa.me/254758796040?text=Hi%20Aimatel%2C%20I%20want%20to%20get%20connected">Get connected →</a>
     <a class="button" href="#packages">View packages</a>
+  </div>
+  <div class="hero-actions" style="margin-top: 18px;">
+    <a class="button button-lime" href="#coverage">Check if your area is covered</a>
   </div>
 </div>
      <div class="visual" aria-label="Aimatel connection graphic">
@@ -389,9 +677,7 @@
 </div>
     </div>
 
-   <div class="proof-item"><strong>30 Mbps</strong><span>top speed</span></div>
-<div class="proof-item"><strong>3</strong><span>packages to choose from</span></div>
-<div class="proof-item"><strong>Ksh 3,000</strong><span>one-time installation</span></div>
+   <div class="proof-item"><strong>Ksh 3,000</strong><span>one-time installation</span></div>
 <div class="proof-item"><strong>1 month</strong><span>free to start</span></div>
 
    <section class="container" id="packages">
@@ -425,6 +711,96 @@
   </div>
 </section>
 
+   <section class="container coverage-section" id="coverage">
+  <div class="section-head">
+    <h2>Coverage areas.</h2>
+    <p>Check if your area is already covered. Search for your location below.</p>
+  </div>
+
+  <div class="coverage-panel">
+    <div class="coverage-header">
+      <span class="work-tag" style="color: var(--muted);">Areas we serve</span>
+      <input id="locationSearch" class="coverage-search" type="text" placeholder="Search your location" aria-label="Search your location">
+    </div>
+
+    <div class="coverage-grid" id="coverageGrid">
+      <div class="coverage-item" data-location="wajir town" tabindex="0" role="button" aria-label="Check coverage for Wajir Town">Wajir Town</div>
+      <div class="coverage-item" data-location="halane" tabindex="0" role="button" aria-label="Check coverage for Halane">Halane</div>
+      <div class="coverage-item" data-location="shokaa" tabindex="0" role="button" aria-label="Check coverage for Shokaa">Shokaa</div>
+      <div class="coverage-item" data-location="icf" tabindex="0" role="button" aria-label="Check coverage for ICF">ICF</div>
+      <div class="coverage-item" data-location="hadado yorey" tabindex="0" role="button" aria-label="Check coverage for Hadado Yorey">Hadado Yorey</div>
+      <div class="coverage-item" data-location="surai stage" tabindex="0" role="button" aria-label="Check coverage for Surai Stage">Surai Stage</div>
+      <div class="coverage-item" data-location="slaughter" tabindex="0" role="button" aria-label="Check coverage for Slaughter">Slaughter</div>
+      <div class="coverage-item" data-location="makaror" tabindex="0" role="button" aria-label="Check coverage for Makaror">Makaror</div>
+    </div>
+
+    <div class="coverage-empty" id="coverageEmpty">No coverage found for your search. Chat with us and we'll confirm your area.</div>
+    <div class="coverage-help">Not covered yet? <a href="https://wa.me/254758796040?text=Hi%20Aimatel%2C%20my%20area%20is%20not%20listed.%20Can%20you%20confirm%20coverage%3F">Message us on WhatsApp</a> and we’ll check your location.</div>
+  </div>
+</section>
+
+   <section class="container process-section" id="process">
+  <div class="section-head">
+    <h2>How it works.</h2>
+    <p>Getting started is fast and simple. Here is how we connect you.</p>
+  </div>
+
+  <div class="process-grid">
+    <article class="process-card">
+      <span class="step-number">01</span>
+      <h3>Message us</h3>
+      <p>Send a quick WhatsApp message and tell us the package or area you need.</p>
+    </article>
+
+    <article class="process-card">
+      <span class="step-number">02</span>
+      <h3>Confirm your area</h3>
+      <p>We check if your location is covered and advise the best package for your needs.</p>
+    </article>
+
+    <article class="process-card">
+      <span class="step-number">03</span>
+      <h3>Pay installation</h3>
+      <p>Installations start from Ksh 3,000, with your first month free on qualifying packages.</p>
+    </article>
+
+    <article class="process-card">
+      <span class="step-number">04</span>
+      <h3>Get connected</h3>
+      <p>We install and activate your connection so you can get online without delay.</p>
+    </article>
+  </div>
+</section>
+
+   <section class="container faq-section" id="faq">
+  <div class="section-head">
+    <h2>Frequently asked questions.</h2>
+    <p>Everything you need to know before getting connected.</p>
+  </div>
+
+  <div class="faq-grid">
+    <div class="faq-item">
+      <h3>Do you install in my area?</h3>
+      <p>Yes. Use the coverage search above or send us your area on WhatsApp and we’ll confirm availability.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>What is the installation fee?</h3>
+      <p>Installation starts at Ksh 3,000, and your first month is free when you subscribe.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Are the packages flexible?</h3>
+      <p>Yes. We offer packages suited to homes, shops, offices and light-to-heavy internet use.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Do you provide support?</h3>
+      <p>Absolutely. We help with connection setup, package guidance and ongoing support when needed.</p>
+    </div>
+  </div>
+</section>
+
    <section class="dark-section" id="why">
   <div class="container">
     <div class="section-head">
@@ -447,6 +823,30 @@
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+   <section class="container testimonial-section" id="testimonials">
+  <div class="section-head">
+    <h2>Customer feedback.</h2>
+    <p>People trust Aimatel for dependable internet and quick service.</p>
+  </div>
+
+  <div class="testimonial-grid">
+    <article class="testimonial-card">
+      <p>“The installation was quick and the connection has been reliable for my shop. I highly recommend Aimatel.”</p>
+      <strong>— M. Yusuf</strong>
+    </article>
+
+    <article class="testimonial-card">
+      <p>“Fast internet and very straightforward pricing. Customer support was also very helpful when I needed guidance.”</p>
+      <strong>— A. Hassan</strong>
+    </article>
+
+    <article class="testimonial-card">
+      <p>“I got connected at home without any confusion. The service is stable and easy to work with.”</p>
+      <strong>— Z. Ali</strong>
+    </article>
   </div>
 </section>
 
@@ -476,21 +876,61 @@
     </div>
   </footer>
 
+  <a class="floating-whatsapp" href="https://wa.me/254758796040?text=Hi%20Aimatel%2C%20I%20want%20to%20get%20connected" aria-label="Chat on WhatsApp">WhatsApp</a>
+
   <script>
     const menuButton = document.querySelector(".menu-button");
     const navLinks = document.querySelector(".nav-links");
+    const locationSearch = document.getElementById("locationSearch");
+    const coverageItems = Array.from(document.querySelectorAll(".coverage-item"));
+    const coverageEmpty = document.getElementById("coverageEmpty");
 
-    menuButton.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("open");
-      menuButton.setAttribute("aria-expanded", String(isOpen));
-      menuButton.textContent = isOpen ? "×" : "☰";
-    });
+    if (menuButton && navLinks) {
+      menuButton.addEventListener("click", () => {
+        const isOpen = navLinks.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.textContent = isOpen ? "×" : "☰";
+      });
 
-    navLinks.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        menuButton.setAttribute("aria-expanded", "false");
-        menuButton.textContent = "☰";
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.textContent = "☰";
+        });
+      });
+    }
+
+    const openLocationWhatsApp = (location) => {
+      const cleanLocation = (location || "").trim();
+      const message = encodeURIComponent(`Hi Aimatel, I am in ${cleanLocation}. Is this area covered?`);
+      window.open(`https://wa.me/254758796040?text=${message}`, "_blank");
+    };
+
+    if (locationSearch) {
+      locationSearch.addEventListener("input", (event) => {
+        const query = event.target.value.trim().toLowerCase().replace(/[^a-z0-9\s]/g, "");
+        let matchCount = 0;
+
+        coverageItems.forEach((item) => {
+          const locationName = item.dataset.location.toLowerCase().replace(/[^a-z0-9\s]/g, "");
+          const isMatch = !query || locationName.includes(query) || query.includes(locationName);
+          item.classList.toggle("hidden", !isMatch);
+          if (isMatch) matchCount += 1;
+        });
+
+        coverageEmpty.classList.toggle("visible", matchCount === 0);
+      });
+    }
+
+    coverageItems.forEach((item) => {
+      const openItem = () => openLocationWhatsApp(item.dataset.location);
+      item.addEventListener("click", openItem);
+      item.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openItem();
+        }
       });
     });
   </script>
