@@ -289,6 +289,27 @@
       box-shadow: 0 24px 60px rgba(11,31,58,.06);
       border: 1px solid rgba(11,31,58,.06);
     }
+    .coverage-map {
+      margin-top: 24px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(11,31,58,.08);
+      box-shadow: 0 18px 40px rgba(11,31,58,.08);
+    }
+    .coverage-map iframe {
+      display: block;
+      width: 100%;
+      height: 360px;
+      border: 0;
+    }
+    .coverage-map-caption {
+      margin: 0;
+      padding: 14px 18px;
+      background: var(--white);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
     .coverage-header {
       display: flex;
       justify-content: space-between;
@@ -664,6 +685,7 @@
      <div class="nav-links" id="nav-links">
   <a href="#packages">Packages</a>
   <a href="#why">Why Aimatel</a>
+  <a href="#coverage">Coverage</a>
   <a href="#contact">Contact</a>
   <a class="button button-dark" href="https://wa.me/254758796040">WhatsApp us</a>
 </div>
@@ -719,8 +741,14 @@
 </div>
     </div>
 
-   <div class="proof-item"><strong>Ksh 3,000</strong><span>one-time installation</span></div>
-<div class="proof-item"><strong>1 month</strong><span>free to start</span></div>
+   <div class="proof">
+    <div class="container proof-grid">
+      <div class="proof-item"><strong>Ksh 3,000</strong><span>one-time installation</span></div>
+      <div class="proof-item"><strong>1 month</strong><span>free to start</span></div>
+      <div class="proof-item"><strong>Fast setup</strong><span>same-week installation</span></div>
+      <div class="proof-item"><strong>Local support</strong><span>ready when you need help</span></div>
+    </div>
+  </div>
 
    <section class="container" id="packages">
   <div class="section-head">
@@ -748,7 +776,7 @@
       <h3>Premium</h3>
       <div class="speed">40<span> Mbps</span></div>
       <div class="price">Ksh 3,000<span> / month</span></div>
-      <a class="button" href="https://wa.me/254758796040?text=Hi%20Aimatel%2C%20I%20want%20the%20Premium%2030%20Mbps%20package">Get Premium</a>
+      <a class="button" href="https://wa.me/254758796040?text=Hi%20Aimatel%2C%20I%20want%20the%20Premium%2040%20Mbps%20package">Get Premium</a>
     </article>
   </div>
 </section>
@@ -756,7 +784,7 @@
    <section class="container coverage-section" id="coverage">
   <div class="section-head">
     <h2>Coverage areas.</h2>
-    <p>Check if your area is already covered. Search for your location below.</p>
+    <p>We serve Wajir Town and nearby areas. Search the list below, then view the Wajir Town map.</p>
   </div>
 
   <div class="coverage-panel">
@@ -778,6 +806,15 @@
 
     <div class="coverage-empty" id="coverageEmpty">No coverage found for your search. Chat with us and we'll confirm your area.</div>
     <div class="coverage-help">Not covered yet? <a href="https://wa.me/254758796040?text=Hi%20Aimatel%2C%20my%20area%20is%20not%20listed.%20Can%20you%20confirm%20coverage%3F">Message us on WhatsApp</a> and we’ll check your location.</div>
+    <div class="coverage-map">
+      <iframe
+        src="https://www.google.com/maps?q=Wajir%20Town%2C%20Kenya&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map of Wajir Town, where Aimatel provides internet coverage">
+      </iframe>
+      <p class="coverage-map-caption">Coverage areas: Wajir Town, Halane, Shokaa, ICF, Hadado Yorey, Surai Stage, Slaughter and Makaror. The map shows the Wajir Town area; message us to confirm coverage at your exact location.</p>
+    </div>
   </div>
 </section>
 
